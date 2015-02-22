@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>370889A4-6189-4129-AD56-8EB4E923959A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Labo2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EC94C408B957C48D90E9FE09B78548241953DADE</key>
+		<string>https://github.com/rosseelthomas/AlgoritmenI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Labo2/Labo2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EC94C408B957C48D90E9FE09B78548241953DADE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rosseelthomas/AlgoritmenI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EC94C408B957C48D90E9FE09B78548241953DADE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC94C408B957C48D90E9FE09B78548241953DADE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AlgoritmenI</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -60,6 +60,12 @@ class Sortvector{
 };
 
 template <class T>
+void Sortvector<T>::sorteer(const Sorteermethode<T> & methode){
+    methode(tab);
+    
+}
+
+template <class T>
 void Sortvector<T>::schrijf(ostream & os)const{
 	for(int i=0; i<tab.size(); i++){
 		os<<tab[i]<<" ";
