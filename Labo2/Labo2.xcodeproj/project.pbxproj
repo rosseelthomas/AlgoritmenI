@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F3938CD1A9B7FA600874BA9 /* csv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = csv.h; sourceTree = "<group>"; };
 		2FCBF21E1A960F7900D36F56 /* Labo2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Labo2; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCBF2281A96107A00D36F56 /* chrono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chrono.h; sourceTree = "<group>"; };
 		2FCBF2291A96107A00D36F56 /* sorteermethode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sorteermethode.h; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		2FCBF2201A960F7900D36F56 /* Labo2 */ = {
 			isa = PBXGroup;
 			children = (
+				2F3938CD1A9B7FA600874BA9 /* csv.h */,
 				2FCBF2281A96107A00D36F56 /* chrono.h */,
 				2FCBF2291A96107A00D36F56 /* sorteermethode.h */,
 				2FCBF22A1A96107A00D36F56 /* sortvector.h */,
@@ -238,6 +240,7 @@
 				2FCBF2271A960F7900D36F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

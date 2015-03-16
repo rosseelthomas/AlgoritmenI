@@ -9,6 +9,10 @@
 #include <iomanip>   // voor setw
 #include <cstdlib>   // voor rand - opletten!! 
 #include "sorteermethode.h"
+#include "csv.h"
+
+
+#include "chrono.h"
 
 template<class T>
 class Sortvector{                                       
@@ -139,6 +143,60 @@ void Sortvector<T>::shuffle(){
     
     }
 
+}
+
+template <class T>
+void Sortvector<T>::vul_random_zonder_dubbels(){
+    vul_range();
+    shuffle();
+    
+}
+
+
+template <typename T>
+void meet(int kortste, int langste, Sorteermethode<T> & sm, ostream & os){
+    Chrono c;
+    CsvData csv("/Users/thomasrosseel/Documents/AlgoritmenI/Labo2/file",',');
+     vector<double> ve(4);
+    vector<double> first;
+    vector<double> sec;
+    vector<double> th;
+    vector<double> fo;
+    
+    if(kortste<=0)
+        return;
+    while(kortste<=langste){
+       
+        first.push_back(kortste);
+        os<<std::setw(10)<<kortste;
+        Sortvector<T> v(kortste);
+        v.vul_random_zonder_dubbels();
+        c.start();
+        v.sorteer(sm);
+        c.stop();
+        os<<std::setw(10)<<c.tijd();
+        sec.push_back(c.tijd());
+        c.start();
+        v.sorteer(sm);
+        c.stop();
+        os<<std::setw(10)<<c.tijd();
+        th.push_back(c.tijd());
+        v.vul_omgekeerd();
+        c.start();
+        v.sorteer(sm);
+        c.stop();
+        os<<std::setw(10)<<c.tijd();
+        fo.push_back(c.tijd());
+        os<<endl;
+        kortste*=10;
+       
+    }
+     csv.voegDataToe(first);
+    csv.voegDataToe(sec);
+    csv.voegDataToe(th);
+    csv.voegDataToe(fo);
+    
+    
 }
 
 

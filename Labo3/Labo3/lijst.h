@@ -53,20 +53,17 @@ public:
 	//deepcopy constructor
 	Lijst(const Lijst<T>& l)
 	{
-		if (l){
-			Lijst<T>* nieuw = new Lijst<T>();
-			Lijst<T>* lijstloper = nieuw;
-			const Lijst<T>* loper = &l;
-			while (*loper){ //loop lijst af, maak nieuwe lijstknoop en voeg toe
-				Lijstknoop<T>* nieuweknoop = new Lijstknoop<T>(loper->get()->sl);
-				Lijstknoopptr<T> ptr(nieuweknoop);
-				(*lijstloper) = std::move(ptr);
-				lijstloper = &(lijstloper->get()->volgend);
-				loper = &(loper->get()->volgend);
-			}
-
-			*this = std::move(*nieuw);
-		}
+        if(l){
+            const Lijst<T>* loper = &l;
+            Lijst<T>* lijstloper = this;
+            while(*loper){
+                 Lijstknoop<T>* temp = new Lijstknoop<T>((*loper)->sl);
+                lijstloper->swap(temp->volgend);
+                *lijstloper = temp;
+                lijstloper = &((*(*lijstloper)).volgend);
+                loper = &((*(*loper)).volgend);
+            }
+        }
 
 	}
 

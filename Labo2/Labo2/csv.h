@@ -59,10 +59,10 @@ char* formatteer(char* buf, double x){
                 maxbuflen=strlen(uitbuf);
             uit<< (j==data.size()-1?
                                     '\n':
-                                    '\t');
+                                    ';');
          }
      }
-//     std::cerr <<" maxbuflen "<<maxbuflen <<" kolombreedte "<<kolombreedte <<"\n";
+     std::cerr <<" maxbuflen "<<maxbuflen <<" kolombreedte "<<kolombreedte <<"\n";
      delete uitbuf;
  }
 protected:
