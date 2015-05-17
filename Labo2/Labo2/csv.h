@@ -62,7 +62,7 @@ char* formatteer(char* buf, double x){
                                     ';');
          }
      }
-     std::cerr <<" maxbuflen "<<maxbuflen <<" kolombreedte "<<kolombreedte <<"\n";
+     //std::cerr <<" maxbuflen "<<maxbuflen <<" kolombreedte "<<kolombreedte <<"\n";
      delete uitbuf;
  }
 protected:

@@ -156,7 +156,7 @@ void Sortvector<T>::vul_random_zonder_dubbels(){
 template <typename T>
 void meet(int kortste, int langste, Sorteermethode<T> & sm, ostream & os){
     Chrono c;
-    CsvData csv("/Users/thomasrosseel/Documents/AlgoritmenI/Labo2/file",',');
+   // CsvData csv("/Users/thomasrosseel/Documents/AlgoritmenI/Labo2/file",',');
      vector<double> ve(4);
     vector<double> first;
     vector<double> sec;
@@ -191,10 +191,10 @@ void meet(int kortste, int langste, Sorteermethode<T> & sm, ostream & os){
         kortste*=10;
        
     }
-     csv.voegDataToe(first);
+   /*  csv.voegDataToe(first);
     csv.voegDataToe(sec);
     csv.voegDataToe(th);
-    csv.voegDataToe(fo);
+    csv.voegDataToe(fo);*/
     
     
 }

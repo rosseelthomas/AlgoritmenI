@@ -30,19 +30,25 @@ int main(){
     cout << v;
      */
     
-    //InsertionSort<int> sorteer;
-    //meet(1000,100000, sorteer, cout);
+    /*
+    
+    STLSort<int> sorteer;
+    meet(1000,100000000, sorteer, cout);
+    cout <<endl<<endl;
+    FancyQuickSort<int> s;
+    meet(10000,10001, s, cout);*/
     
     
     srand(time(0));
-    Sortvector<int> v(100);
+    Sortvector<int> v(8);
     v.vul_omgekeerd();
     v.draai_om();
-    v.shuffle();
+   v.shuffle();
     //v[0]=0;v[1]=3;v[2]=2;v[3]=1;v[4]=3;v[4]=4;v[5]=4;v[6]=0;v[7]=5;v[8]=2;v[9]=100;
     cout <<v<<endl;
-     v.sorteer(FancyQuickSort<int>());
+     v.sorteer(InverseMergeSort<int>());
     cout << v;
+    
     
     
     

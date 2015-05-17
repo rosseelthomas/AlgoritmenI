@@ -312,6 +312,33 @@ public:
 
 };
 
+template <typename T>
+void omgekeerdeMerge(vector<T> &v, vector<T> &h){
+
+    for(int size=2;size/2<=v.size();size*=2){
+        
+        int i=0;
+        while(i<v.size()){
+            
+            int tot = (i+size<v.size())?i+size-1:v.size()-1;
+            merge(v,i,std::floor((tot-i)/2)+i,tot,h);
+            i+=size;
+        }
+    }
+
+
+}
+
+
+template <typename T>
+class InverseMergeSort : public Sorteermethode<T>{
+public:
+    void operator()(vector<T> & v) const{
+        vector<T> h(v.size()/2);
+        omgekeerdeMerge(v,h);
+    }
+    
+};
 
 
 
